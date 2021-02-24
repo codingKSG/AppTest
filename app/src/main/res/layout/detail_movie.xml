@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/iv_detail_img"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="title"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_detail_summary"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:text="summary"
+            android:textSize="13sp"
+            android:maxLines="9"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/tv_detail_rating"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:text="rating"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_detail_runtime"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:text="runtime"
+            android:textSize="10sp"/>
+        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_detail_url"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:text="URL연결"
+            android:textSize="8sp"
+            android:textColor="@android:color/white"
+            android:background="#FD3E3E"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
